@@ -1,0 +1,23 @@
+.whom {
+    text-align: right;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: small;
+}
+
+.eee {
+    font-family: 'Pacifico', cursive;
+    text-decoration: underline;
+    text-indent: 10mm;
+    font-size: larger;
+}
+
+.main {
+    font-family: 'Caveat', cursive;
+    text-indent: 10mm;
+    font-size: larger;
+}
+
+.thx {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: small;
+}
