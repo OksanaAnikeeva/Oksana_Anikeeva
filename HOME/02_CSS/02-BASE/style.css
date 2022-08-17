@@ -1,0 +1,21 @@
+.list {
+    width: 350px;
+}
+
+.main {
+    list-style-type: upper-roman;
+    font-weight: bold;
+}
+
+.dop {
+    list-style-type: lower-roman;
+    font-weight: normal;
+}
+
+.box {
+    background-color: black;
+    color: green;
+    width: 400px;
+    max-height: 72px;
+    overflow: auto;
+}

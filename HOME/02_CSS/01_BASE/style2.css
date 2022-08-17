@@ -1,0 +1,44 @@
+.ten {
+    display: inline-block;
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: -430px -1388px;
+    height: 200px;
+    width: 50px;
+}
+
+.lady {
+    display: inline-block;
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: 5px -1785px;
+    height: 200px;
+    width: 55px;
+}
+
+.nine {
+    display: inline-block;
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: -283px -1388px;
+    height: 200px;
+    width: 60px;
+}
+
+.ace {
+    display: inline-block;
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: -139px -2185px;
+    height: 200px;
+    width: 65px;
+}
+
+.joker {
+    display: inline-block;
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: -284px -2385px;
+    height: 200px;
+    width: 150px;
+}
