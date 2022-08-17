@@ -4,7 +4,8 @@
     background-repeat: no-repeat;
     background-position: -430px -1388px;
     height: 200px;
-    width: 50px;
+    width: 150px;
+    margin-right: -90px;
 }
 
 .lady {
@@ -13,7 +14,8 @@
     background-repeat: no-repeat;
     background-position: 5px -1785px;
     height: 200px;
-    width: 55px;
+    width: 150px;
+    margin-right: -90px;
 }
 
 .nine {
@@ -22,7 +24,8 @@
     background-repeat: no-repeat;
     background-position: -283px -1388px;
     height: 200px;
-    width: 60px;
+    width: 150px;
+    margin-right: -90px;
 }
 
 .ace {
@@ -31,7 +34,8 @@
     background-repeat: no-repeat;
     background-position: -139px -2185px;
     height: 200px;
-    width: 65px;
+    width: 150px;
+    margin-right: -90px;
 }
 
 .joker {
