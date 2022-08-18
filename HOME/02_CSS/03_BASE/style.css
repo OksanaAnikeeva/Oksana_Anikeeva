@@ -1,0 +1,29 @@
+.parent {
+    background-color: #cccccc;
+}
+
+.nav {
+    background-color: #cccccc;
+    width: 15em;
+    float: left;
+}
+
+.item {
+    background-color: #aaaaaa;
+    margin-bottom: 0.2em;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    overflow: auto;
+}
+
+.footer {
+    background-color: #cccccc;
+    clear: both;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+}
+
+img {
+    float: right;
+
+}
