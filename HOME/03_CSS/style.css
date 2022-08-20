@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+  }
+  
+  li {
+    color: rgb(148, 148, 148);;
+    background: #d3d3d3;
+    display: block;
+    float: left;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+
+  }
+    
+  li a {
+    color: rgb(148, 148, 148);
+  }
+  
+  li:hover {
+    background: #666565;
+    cursor: pointer;
+  }
+  
+  ul li ul {
+    background: #d3d3d3;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  ul li:hover > ul {
+    visibility: visible;
+    display: block;
+  }
