@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .item {
+            margin-bottom: 10px;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            color: blue
+        }
+
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="item">
+                <h1>HOW-TO: Программа на Python, Часть 1</h1>
+            </div>
+            <div class="col-xl-4">
+                <div class="item">
+                    <p>
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Программа
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <ul>
+                                <li><a href="#"><em>Программа на Python — часть 1</em></a></li>
+                                <li><a href="#"><em>Программа на Python — часть 2</em></a></li>
+                                <li><a href="#"><em>Программа на Python — часть 3</em></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="item">
+                    <h1>HOW-TO: Программа на Python, Часть 1</h1>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="item">
+                    <h2 class="main" id="list">Содержание</h2>
+                    <ul>
+                        <li><a href="#first">Наша первая программа</a></li>
+                        <li><a href="#For">Пример цикла For</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="item">
+                    <p>Из множества существующих языков программирования Python — один из самых лёгких
+                        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+                        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+                        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+                        создание консольных приложений, а в следующей — программирование графических
+                        интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.</p>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="item">
+                    <h2 id="first">Наша первая программа</h2>
+                    <a href="#list">К содержанию</a>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="item">
+                    <p>Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что
+                        делает
+                        каждая строка и пойдём дальше.</p>
+                    <p>Введите эти 4 строки:</p>
+                    <pre><code>
+                        #!/usr/bin/env python</li>
+                        print 'Hello. I am a python program.'
+                        name = raw_input("What is your name?")
+                        print "Hello there, " + name + "!"
+                    </code></pre>
+                    <p>Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в
+                        папке
+                        <strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто
+                        написать
+                        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+                        этого введите в терминале
+                    </p>
+                    <p><b><u><i>chmod +x hello.py</i></u></b></p>
+                    <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+                    <pre><code>
+                        greg@earth:~/python_examples$ ./hello.py
+                        Hello. I am a python program.
+                        What is your name? Ferd Burphel
+                        Hello there, Ferd Burphel!
+                        greg@earth:~/python_examples$
+                    </code></pre>
+                    <p>Вот и всё.</p>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="item">
+                    <h2 id="For">Пример цикла For</h2>
+                    <a href="#list">К содержанию</a>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="item">
+                    <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+                        редактор и наберите следующую программу:</p>
+                    <pre><code>
+                        #!/usr/bin/env python
+                        for cntr in range(0,10):
+                        print cntr
+                    </code></pre>
+                    <p><em>Не забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В
+                        Python для указания на блоки кода используются не круглые «<strong>(</strong>» и фигурные
+                        «<strong>{</strong>»
+                        скобки
+                        как в других языках программирования, а отступы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
