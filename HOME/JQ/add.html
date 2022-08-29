@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .password {
+            background-color: chartreuse;
+        }
+
+        .cor_password {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Проверка пароля</h1>
+    <form method="post" name="form" action="">
+
+        <div>Пароль:</div>
+        <input type="text" class="password">
+
+        <div>Повторите пароль:</div>
+        <input type="text" class="cor_password">
+
+        <p><input type="submit" value="Отправить" id="submit"></p>
+
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        $(".cor_password").on("keyup", function () {
+
+            var value_input1 = $(".password").val();
+            var value_input2 = $(this).val();
+
+            if (value_input1 != value_input2) {
+
+                $(".cor_password").css('backgroundColor', 'red')
+
+
+            } else {
+
+                $(".cor_password").css('backgroundColor', 'chartreuse')
+
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

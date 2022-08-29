@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {
+            background-color: grey;
+
+        }
+
+        tbody tr td {
+            border: 2px;
+            border-left-style: dotted;
+            border-top-style: dotted;
+            border-color: grey;
+        }
+
+        tfoot td {
+            border-top-style: dotted;
+            border-color: grey;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2) {
+            background-color: rgb(188, 186, 186);
+        }
+
+        tbody tr:nth-child(4) {
+            background-color: rgb(188, 186, 186);
+        }
+
+        button {
+            background-color: #008CBA;
+            color: white;
+            font-size: 10px;
+            padding: 10px 24px;
+            border-radius: 8px;
+        }
+
+        tbody tr:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ФИО</th>
+                <th>пол</th>
+                <th>должность</th>
+                <th>дата рож.</th>
+                <th>Данные 01</th>
+                <th>Данные 02</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="iv">
+                <td>Иванов Иван Иванович</td>
+                <td>М</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>3453</td>
+            </tr>
+            <tr id="pr">
+                <td>Петрова Илонна Петровна</td>
+                <td>Ж</td>
+                <td>секретарь</td>
+                <td>01.01.1989</td>
+                <td>98795</td>
+                <td>46523</td>
+            </tr>
+            <tr id="si">
+                <td>Сидоров Илья Игоревич</td>
+                <td>М</td>
+                <td>бухгалтер</td>
+                <td>01.01.1979</td>
+                <td>743434</td>
+                <td>987979</td>
+            </tr>
+            <tr id="pu">
+                <td>Пупин Фёдор Фёдорович</td>
+                <td>М</td>
+                <td>водитель</td>
+                <td>01.01.1963</td>
+                <td>74323434</td>
+                <td>9232379</td>
+            </tr>
+            <tr id="kr">
+                <td>Крупин Сергей Иванович</td>
+                <td>М</td>
+                <td>водитель 2</td>
+                <td>01.01.1983</td>
+                <td>3234534</td>
+                <td>923123379</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <button id='btn'>Показать все строки</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function ($) {
+
+            $('#iv').click(function () {
+                $("#iv").slideUp();
+            })
+            $('#pr').click(function () {
+                $("#pr").slideUp();
+            })
+            $('#si').click(function () {
+                $("#si").slideUp();
+            })
+            $('#kr').click(function () {
+                $("#kr").slideUp();
+            })
+            $('#pu').click(function () {
+                $("#pu").slideUp();
+            })
+            $('#btn').click(function () {
+                $('tr').slideDown();
+            });
+            $('#btn').click(function () {
+                var $this = $(this);
+                $this.toggleClass('#btn');
+                if ($this.hasClass('#btn')) {
+                    $this.text('Показать все строки');
+                } else {
+                    $this.text('Нет скрытых строк');
+                }
+                
+            });
+        });
+
+    </script>
+</body>
+
+</html>
