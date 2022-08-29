@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            width: 500px;
+            border: 1px solid grey;
+            text-indent: 10px;
+        }
+
+        li::before {
+            content: url(pictures/list.jpg)
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .Word:hover {
+
+            background: url(pictures/word.jpg) right no-repeat;
+            width: 170px;
+        }
+
+        .Pdf:hover {
+            background: url(pictures/pdf.png) right no-repeat;
+            width: 135px;
+        }
+
+        .zip:hover {
+            background: url(pictures/zip.gif) right no-repeat;
+            width: 80px;
+        }
+a[href$='doc']::before{
+    content: url(pictures/arrow.png);
+}
+a[href$='word']::after{
+    content: url(pictures/word.jpg);
+}
+a[href$='pdf']::after{
+    content: url(pictures/pdf.png);
+}
+a[href$='zip']::after{
+    content: url(pictures/zip.gif);
+}
+    </style>
+</head>
+
+<body>
+    <h1>Форматы файлов.</h1>
+    <p>.DOC или .doc (от англ. <a href="doc">document</a>) - расширение имени файла,
+        используемое для
+        файлов, представляющих текст, с
+        разметкой или без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без
+        формирования, однако позже стало использоваться для двоичных форматов с разметкой <br>
+        <a href="word">Документ MS Word</a>
+    </p>
+    <p>Portable Document Format (<a href="doc">PDF</a>) - межплатформенный формат
+        электронных
+        документов, разработанный фирмой Adobe
+        Systems с использованием ряда возможностей языка Postscript. <br>
+        <a href="pdf">Документ PDF</a>
+    </p>
+    <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="doc">.zip</a> и
+        хранит в сжатом или несжатом виде один или несколько файлов, которое можно из него извлечь путем распаковки с
+        помощью специальной программы. <br>
+        <a href="zip">Архив</a>
+    </p>
+    <h3>Это список файлов</h3>
+    <ul>
+        <li class="Word"><a href="#">Документ MS Word</a></li>
+        <li class="Pdf"><a href="#">Документ PDF</a></li>
+        <li class="zip"><a href="#">Архив</a></li>
+    </ul>
+
+</body>
+
+</html>
